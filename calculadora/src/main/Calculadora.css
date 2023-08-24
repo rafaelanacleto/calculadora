@@ -1,0 +1,9 @@
+.calculadora {
+    height: 320px;
+    width: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: darkkhaki;
+    margin: auto;
+    padding: 10px;
+}
