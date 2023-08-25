@@ -1,9 +1,16 @@
 import React from 'react'
 
+import './Button.css';
+
 export const Button = (props) => {
   return (
     <div>
-        <button>0</button>
+      <button className={`
+        button operation
+      `}>
+        {props.label}
+      </button>
     </div>
-  )
-}
+    )
+  }
+  
