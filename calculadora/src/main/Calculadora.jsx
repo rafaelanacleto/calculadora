@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
 import './Calculadora.css'
+import { Button } from '../components/Button'
 
 class Calculadora extends Component {
   render() {
     return <div className='calculadora'>
-        calc
+        <Button/>
     </div>
   }
 }
