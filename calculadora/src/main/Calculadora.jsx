@@ -19,15 +19,15 @@ class Calculadora extends Component {
   }
 
   render() {
-    const addDigit = n => this.addDigit(n);
-    const setOperation = o => this.setOperation(o);
+    // const addDigit = n => this.addDigit(n);
+    // const setOperation = o => this.setOperation(o);
   
     return <div className='calculadora'>
-        <Display value={"1234567890"} />
+        <Display value={"0"} />
 
         <Button label={"AC"} operation={'operation'} double={'double'} click={() => this.clearMemory()} />
-        <Button label={"/"} operation={'operation'} click={setOperation("/")}/>
-        <Button label={7} click={addDigit(7)}/>
+        <Button label={"/"} operation={'operation'} click={() => this.setOperation("/")}/>
+        <Button label={7} click={() => this.addDigit(7)}/>
         <Button label={8}/>
         <Button label={9}/>
         <Button label={"*"} operation={'operation'}/>
